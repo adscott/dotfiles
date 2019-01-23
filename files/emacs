@@ -49,3 +49,5 @@
 
 (ensure-installed 'zenburn-theme)
 (load-theme 'zenburn t)
+
+(xterm-mouse-mode 1)
