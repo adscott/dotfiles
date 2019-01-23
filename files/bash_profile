@@ -21,7 +21,4 @@ PROMPT_COMMAND=exitstatus
 export PATH=$PATH:~/Tools/Path
 export LSCOLORS=GxFxCxDxBxegedabagacad
 
-alias ls='ls -FG'
-alias ll='ls -l'
-alias la='ls -a'
 alias vim='echo "No! Use emacs!"'

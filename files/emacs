@@ -6,6 +6,8 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+(ensure-installed 'multi-term)
+(require 'multi-term)
 
 (ensure-installed 'multiple-cursors)
 (global-set-key (kbd "C-d") 'mc/mark-next-like-this-word)
