@@ -42,6 +42,7 @@
 
 (setq-default show-trailing-whitespace t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'term-mode-hook (lambda() (setq show-trailing-whitespace nil)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
