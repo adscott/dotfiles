@@ -21,4 +21,7 @@ PROMPT_COMMAND=exitstatus
 export PATH=$PATH:~/Tools/Path
 export LSCOLORS=GxFxCxDxBxegedabagacad
 
-alias vim='echo "No! Use emacs!"'
+export ALTERNATE_EDITOR=""
+alias e="emacsclient --tty"
+
+export EDITOR="emacsclient --tty"

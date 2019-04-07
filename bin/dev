@@ -4,4 +4,4 @@ set -e
 
 eval $(ssh-agent -s)
 ssh-add
-emacs
+tmux
