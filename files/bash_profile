@@ -8,9 +8,9 @@ function exitstatus {
 
 	if [ "$EXITSTATUS" -eq "0" ]
 	then
-		PS1="[${BOLD}\w] ${GREEN}$(  git rev-parse --abbrev-ref HEAD 2> /dev/null || echo ""  )${OFF} ${BLUE}\$${OFF} "
+		PS1="[${BOLD}\w] ${GREEN}$(  git rev-parse --abbrev-ref HEAD 2> /dev/null || echo ""  )${OFF}\n ${BLUE}\$${OFF} "
 	else
-		PS1="[${BOLD}\w] ${GREEN}$(  git rev-parse --abbrev-ref HEAD 2> /dev/null || echo ""  )${OFF} ${RED}\$${OFF} "
+		PS1="[${BOLD}\w] ${GREEN}$(  git rev-parse --abbrev-ref HEAD 2> /dev/null || echo ""  )${OFF}\n ${RED}\$${OFF} "
 	fi
 
 	PS2="${BOLD}>${OFF} "

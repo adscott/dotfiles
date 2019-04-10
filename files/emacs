@@ -6,6 +6,8 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+(ensure-installed 'use-package)
+
 (ensure-installed 'zoom-window)
 (require 'zoom-window)
 (global-set-key (kbd "C-x C-z") 'zoom-window-zoom)
@@ -23,7 +25,7 @@
 (require 'multi-term)
 
 (ensure-installed 'multiple-cursors)
-(global-set-key (kbd "C-d") 'mc/mark-next-like-this-word)
+(bind-key* "C-d" 'mc/mark-next-like-this-word)
 
 (ensure-installed 'projectile)
 (require 'projectile)
@@ -63,3 +65,5 @@
   kept-old-versions 2
   version-control t)
 (setq auto-save-default nil)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
