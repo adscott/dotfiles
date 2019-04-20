@@ -24,4 +24,4 @@ export LSCOLORS=GxFxCxDxBxegedabagacad
 export ALTERNATE_EDITOR=""
 alias e="emacsclient --tty"
 
-export EDITOR="emacsclient --tty"
+export EDITOR="vim"
