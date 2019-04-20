@@ -1,0 +1,19 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'kana/vim-fakeclip'
+
+call vundle#end()            " required
+filetype plugin indent on    " required'
+
+
+set number
+
+" set clipboard=unnamed
+" let g:fakeclip_terminal_multiplexer_type = 'tmux'
