@@ -9,6 +9,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'kana/vim-fakeclip'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required'
