@@ -24,5 +24,8 @@ set noswapfile
 autocmd BufWritePre * %s/\s\+$//e
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set mouse=a
+set esckeys
+set ttimeout
+set ttimeoutlen=100
 
 colorscheme gruvbox
