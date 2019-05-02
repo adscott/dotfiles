@@ -24,7 +24,3 @@ Repo containing the dotfiles I use in various environments.
 
   * [multiple-cursors](https://github.com/magnars/multiple-cursors.el) for emacs.
   * [projectile](http://batsov.com/projectile/)
-
-## To Do
-
-  * [fix colorsheme on install](https://stackoverflow.com/questions/54606581/ignore-all-errors-in-vimrc-at-vim-startup)
