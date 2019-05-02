@@ -11,6 +11,8 @@ Plugin 'kana/vim-fakeclip'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'bling/vim-airline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required'
@@ -22,3 +24,5 @@ set noswapfile
 autocmd BufWritePre * %s/\s\+$//e
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set mouse=a
+
+colorscheme gruvbox
