@@ -24,3 +24,7 @@ Repo containing the dotfiles I use in various environments.
 
   * [multiple-cursors](https://github.com/magnars/multiple-cursors.el) for emacs.
   * [projectile](http://batsov.com/projectile/)
+
+#### Tmux
+
+  * [gruvbox](https://github.com/egel/tmux-gruvbox)
