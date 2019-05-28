@@ -12,6 +12,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required'
