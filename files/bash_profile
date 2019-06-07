@@ -22,6 +22,6 @@ export PATH=$PATH:~/Tools/Path
 export LSCOLORS=GxFxCxDxBxegedabagacad
 
 export ALTERNATE_EDITOR=""
-alias e="vim \`fzf\`"
+alias e="vim \"\`fzf\`\""
 
 export EDITOR="vim"
