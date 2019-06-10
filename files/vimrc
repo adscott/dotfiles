@@ -16,4 +16,5 @@ let g:multi_cursor_exit_from_visual_mode=0
 let g:multi_cursor_exit_from_insert_mode=0
 
 colorscheme gruvbox
-nnoremap <silent> <C-p> :FZF<CR>
+nnoremap <silent> <C-p> :GFiles<CR>
+nnoremap <silent> <C-o> :NERDTreeToggle<CR>

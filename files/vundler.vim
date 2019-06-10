@@ -15,6 +15,8 @@ if !has('win32')
     Plugin 'Valloric/YouCompleteMe'
 endif
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'w0rp/ale'
 
 call vundle#end()            " required
 filetype plugin indent on    " required'
