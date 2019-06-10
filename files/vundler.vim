@@ -11,7 +11,8 @@ Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
-if !has('win32')
+if has('win32')
+else
     Plugin 'Valloric/YouCompleteMe'
 endif
 Plugin 'scrooloose/nerdcommenter'
