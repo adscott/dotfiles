@@ -1,4 +1,4 @@
-source ~/.vundler.vim
+source ~/.plugins.vim
 
 set number
 set bg=dark
