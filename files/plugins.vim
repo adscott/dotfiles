@@ -1,21 +1,20 @@
 set nocp
 set rtp+=~/.vim/bundle/Vundle.vim
 
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 
-Plugin 'kana/vim-fakeclip'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plugin 'junegunn/fzf.vim'
-Plugin 'morhetz/gruvbox'
-Plugin 'bling/vim-airline'
+Plug 'kana/vim-fakeclip'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'morhetz/gruvbox'
+Plug 'bling/vim-airline'
 if executable('cmake')
-    Plugin 'Valloric/YouCompleteMe', { 'do': 'python2 ./install.py' }
+    Plug 'Valloric/YouCompleteMe', { 'do': 'python2 ./install.py' }
 endif
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
 
-call vundle#end()            " required
-filetype plugin indent on    " required'
+call plug#end()

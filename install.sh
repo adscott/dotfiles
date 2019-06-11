@@ -12,11 +12,14 @@ ln -sf `pwd`/files/plugins.vim ~/.plugins.vim
 mkdir -p ~/Tools/Path
 ln -sf `pwd`/bin/dev ~/Tools/Path/dev
 
-if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d ~/.vim-plug ]; then
+    git clone https://github.com/junegunn/vim-plug.git ~/.vim-plug
 fi
 
-vim -u `pwd`/files/plugins.vim +PluginInstall +qall
+mkdir -p ~/.vim/autoload
+ln -sf ~/.vim-plug/plug.vim ~/.vim/autoload/plug.vim
+
+vim -u `pwd`/files/plugins.vim +PlugInstall +qall
 
 if [ ! -d ~/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
