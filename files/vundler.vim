@@ -11,9 +11,8 @@ Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
-if has('win32')
-else
-    Plugin 'Valloric/YouCompleteMe'
+if executable('cmake')
+    Plugin 'Valloric/YouCompleteMe', { 'do': 'python2 ./install.py' }
 endif
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
