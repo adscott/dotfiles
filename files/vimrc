@@ -12,11 +12,22 @@ set ttimeout
 set ttimeoutlen=100
 set bs=2
 
+"multiple cursors
 let g:multi_cursor_exit_from_visual_mode=0
 let g:multi_cursor_exit_from_insert_mode=0
 
+"colours
 colorscheme gruvbox
 
+"splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
+
+"fzf
 function! s:find_git_root()
   return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
 endfunction
@@ -24,4 +35,5 @@ endfunction
 command! ProjectFiles execute 'Files' s:find_git_root()
 nnoremap <silent> <C-p> :ProjectFiles<CR>
 
+"NERDTree
 nnoremap <silent> <C-o> :NERDTreeToggle<CR>

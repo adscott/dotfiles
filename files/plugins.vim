@@ -16,5 +16,6 @@ if executable('cmake')
 endif
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
