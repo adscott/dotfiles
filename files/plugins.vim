@@ -3,8 +3,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'VundleVim/Vundle.vim'
-
 Plug 'kana/vim-fakeclip'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf'
