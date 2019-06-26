@@ -12,6 +12,13 @@ set ttimeout
 set ttimeoutlen=100
 set bs=2
 
+"cursorline for focused pane
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
+
 "multiple cursors
 let g:multi_cursor_exit_from_visual_mode=0
 let g:multi_cursor_exit_from_insert_mode=0
