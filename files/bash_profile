@@ -1,16 +1,30 @@
+BOLD="\[\033[1m\]"
+PURPLE="\[\033[1;35m\]"
+RED="\[\033[1;31m\]"
+BLUE="\[\033[1;34m\]"
+GREEN="\[\033[1;32m\]"
+OFF="\[\033[m\]"
+
+function gitbranch {
+    git rev-parse --abbrev-ref HEAD 2> /dev/null || echo ""
+}
+
+function venv {
+    if [[ -z "${VIRTUAL_ENV}" ]]; then
+        echo ""
+    else
+        echo "${PURPLE}`basename "$VIRTUAL_ENV"` `python -c "import platform; print(platform.python_version())"`${OFF}"
+    fi
+}
+
 function exitstatus {
 	EXITSTATUS="$?"
-	BOLD="\[\033[1m\]"
-	RED="\[\033[1;31m\]"
-	BLUE="\[\033[1;34m\]"
-	GREEN="\[\033[1;32m\]"
-	OFF="\[\033[m\]"
 
 	if [ "$EXITSTATUS" -eq "0" ]
 	then
-		PS1="[${BOLD}\w] ${GREEN}$(  git rev-parse --abbrev-ref HEAD 2> /dev/null || echo ""  )${OFF}\n ${BLUE}\$${OFF} "
+		PS1="[${BOLD}\w] ${GREEN}$(gitbranch)${OFF} $(venv)\n${BLUE}\$${OFF} "
 	else
-		PS1="[${BOLD}\w] ${GREEN}$(  git rev-parse --abbrev-ref HEAD 2> /dev/null || echo ""  )${OFF}\n ${RED}\$${OFF} "
+		PS1="[${BOLD}\w] ${GREEN}$(gitbranch)${OFF} $(venv)\n${RED}\$${OFF} "
 	fi
 
 	PS2="${BOLD}>${OFF} "
