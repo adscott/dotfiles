@@ -47,3 +47,6 @@ nnoremap <silent> <C-o> :NERDTreeToggle<CR>
 
 "YCM
 let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
+
+"NERDCommenter
+let g:NERDDefaultAlign = 'left'
