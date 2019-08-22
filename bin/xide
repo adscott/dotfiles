@@ -6,3 +6,4 @@ tmux split-window -v
 tmux resize-pane -t 1 -y 20
 tmux select-pane -t 0
 tmux rename-window "${PWD##*/}"
+sleep 1
