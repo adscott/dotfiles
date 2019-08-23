@@ -38,6 +38,4 @@ export LSCOLORS=GxFxCxDxBxegedabagacad
 export ALTERNATE_EDITOR=""
 export EDITOR="vim"
 
-set -o vi
-
 alias ide="xide && vim"
