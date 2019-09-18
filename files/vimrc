@@ -50,3 +50,8 @@ let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
 
 "NERDCommenter
 let g:NERDDefaultAlign = 'left'
+
+"indent-guides
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 3
+let g:indent_guides_enable_on_vim_startup = 1
