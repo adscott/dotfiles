@@ -39,3 +39,4 @@ export ALTERNATE_EDITOR=""
 export EDITOR="vim"
 
 alias ide="xide && vim"
+alias please='sudo $(history -p !!)'
