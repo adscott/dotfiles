@@ -16,5 +16,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'airblade/vim-gitgutter'
+Plug 'dhruvasagar/vim-table-mode'
 
 call plug#end()
