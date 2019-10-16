@@ -11,7 +11,7 @@ ln -sf `pwd`/files/plugins.vim ~/.plugins.vim
 
 mkdir -p ~/Tools/Path
 ln -sf `pwd`/bin/dev ~/Tools/Path/dev
-ln -sf `pwd`/bin/xide ~/Tools/Path/xide
+ln -sf `pwd`/bin/ide ~/Tools/Path/ide
 
 if [ ! -d ~/.vim-plug ]; then
     git clone https://github.com/junegunn/vim-plug.git ~/.vim-plug
