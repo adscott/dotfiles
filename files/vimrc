@@ -1,16 +1,6 @@
 source ~/.plugins.vim
 
-set number
-set bg=dark
-syntax on
-set noswapfile
-autocmd BufWritePre * %s/\s\+$//e
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-set mouse=a
-set esckeys
-set ttimeout
-set ttimeoutlen=100
-set bs=2
+source ~/.vimrc.portable
 
 "cursorline for focused pane
 augroup CursorLine

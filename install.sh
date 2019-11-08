@@ -7,6 +7,7 @@ ln -sf `pwd`/files/emacs ~/.emacs
 ln -sf `pwd`/files/tmux.conf ~/.tmux.conf
 ln -sf `pwd`/files/bash_profile ~/.bash_profile
 ln -sf `pwd`/files/vimrc ~/.vimrc
+ln -sf `pwd`/files/vimrc.portable ~/.vimrc.portable
 ln -sf `pwd`/files/plugins.vim ~/.plugins.vim
 
 mkdir -p ~/Tools/Path
