@@ -10,6 +10,8 @@ ln -sf `pwd`/files/vimrc ~/.vimrc
 ln -sf `pwd`/files/vimrc.portable ~/.vimrc.portable
 ln -sf `pwd`/files/plugins.vim ~/.plugins.vim
 
+touch ~/.bash_profile_local
+
 mkdir -p ~/Tools/Path
 ln -sf `pwd`/bin/dev ~/Tools/Path/dev
 ln -sf `pwd`/bin/ide ~/Tools/Path/ide
