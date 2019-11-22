@@ -17,5 +17,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'airblade/vim-gitgutter'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()

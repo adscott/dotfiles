@@ -40,3 +40,6 @@ let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
 
 "NERDCommenter
 let g:NERDDefaultAlign = 'left'
+
+"Goyo
+let g:goyo_width = 120
