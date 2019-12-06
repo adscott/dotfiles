@@ -14,6 +14,7 @@ touch ~/.bash_profile_local
 mkdir -p ~/Tools/Path
 ln -sf `pwd`/bin/dev ~/Tools/Path/dev
 ln -sf `pwd`/bin/ide ~/Tools/Path/ide
+ln -sf `pwd`/bin/tmux_rename ~/Tools/Path/tmux_rename
 
 if [ ! -d ~/.vim-plug ]; then
     git clone https://github.com/junegunn/vim-plug.git ~/.vim-plug
