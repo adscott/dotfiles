@@ -22,9 +22,9 @@ function exitstatus {
 
 	if [ "$EXITSTATUS" -eq "0" ]
 	then
-		PS1="[${BOLD}\w] ${GREEN}$(gitbranch)${OFF} $(venv)\n${BLUE}\$${OFF} "
+		PS1="${BOLD}[\D{%T}] [\w] ${GREEN}$(gitbranch)${OFF} $(venv)\n${BLUE}\$${OFF} "
 	else
-		PS1="[${BOLD}\w] ${GREEN}$(gitbranch)${OFF} $(venv)\n${RED}\$${OFF} "
+		PS1="${BOLD}[\D{%T}] [\w] ${GREEN}$(gitbranch)${OFF} $(venv)\n${RED}\$${OFF} "
 	fi
 
 	PS2="${BOLD}>${OFF} "
