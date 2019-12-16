@@ -3,7 +3,7 @@
 set -e
 
 tmux split-window -vb 'vim'
-sleep 0.1
+sleep 0.5
 tmux resize-pane -t 1 -y 20
 tmux select-pane -t 0
 tmux rename-window "${PWD##*/}"
