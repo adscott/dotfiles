@@ -5,8 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'kana/vim-fakeclip'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
+Plug 'kien/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'bling/vim-airline'
 if executable('cmake')
