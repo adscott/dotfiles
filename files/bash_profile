@@ -41,4 +41,19 @@ export EDITOR="vim"
 alias please='sudo $(history -p !!)'
 alias unset_proxy='unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy'
 
+function p() {
+    homedir=~
+    eval homedir=$homedir
+    cd $homedir/Projects/$1/$2
+    ide
+}
+
+function _p_complete() {
+    local prev=${COMP_WORDS[COMP_CWORD-1]}
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=($(compgen -W "$(p_complete $prev)" $cur))
+}
+
+complete -F _p_complete p
+
 source ~/.bash_profile_local

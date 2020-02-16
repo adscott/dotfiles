@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+def listdirs(parent):
+    return [d for d in os.listdir(parent) if os.path.isdir(os.path.join(parent, d))]
+
+if __name__ == "__main__":
+    base_path = os.path.expanduser("~/projects")
+    dirs = listdirs(base_path)
+    if len(sys.argv) > 1 and sys.argv[1] in dirs:
+        for d in listdirs(os.path.join(base_path, sys.argv[1])):
+            print("%s %s" % (sys.argv[1], d))
+    else:
+        for d in dirs:
+            print(d)
