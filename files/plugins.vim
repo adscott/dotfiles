@@ -9,7 +9,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'bling/vim-airline'
 if executable('cmake')
-    Plug 'Valloric/YouCompleteMe', { 'do': 'python2 ./install.py' }
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 endif
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
