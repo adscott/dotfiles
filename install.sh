@@ -29,3 +29,5 @@ vim -u `pwd`/files/plugins.vim +PlugInstall +qall > /dev/null
 if [ ! -d ~/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
+
+~/.tmux/plugins/tpm/bin/install_plugins
