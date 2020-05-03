@@ -24,7 +24,7 @@ fi
 mkdir -p ~/.vim/autoload
 ln -sf ~/.vim-plug/plug.vim ~/.vim/autoload/plug.vim
 
-vim -u `pwd`/files/plugins.vim +PlugInstall +qall
+vim -u `pwd`/files/plugins.vim +PlugInstall +qall > /dev/null
 
 if [ ! -d ~/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
