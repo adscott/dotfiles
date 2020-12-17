@@ -3,15 +3,17 @@
 import os
 import sys
 
-def listdirs(parent):
-    return [d for d in os.listdir(parent) if os.path.isdir(os.path.join(parent, d))]
+
+def listdirs(p):
+    return [d for d in os.listdir(p) if os.path.isdir(os.path.join(p, d))]
+
 
 if __name__ == "__main__":
     base_path = os.path.expanduser("~/Projects")
     dirs = listdirs(base_path)
+
     if len(sys.argv) > 1 and sys.argv[1] in dirs:
-        for d in listdirs(os.path.join(base_path, sys.argv[1])):
-            print("%s %s" % (sys.argv[1], d))
-    else:
-        for d in dirs:
-            print(d)
+        dirs = [d for d in listdirs(os.path.join(base_path, sys.argv[1]))]
+
+    for d in dirs:
+        print(d)
