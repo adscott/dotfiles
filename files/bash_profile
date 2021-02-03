@@ -9,7 +9,7 @@ function gitbranch {
     git rev-parse --abbrev-ref HEAD 2> /dev/null || echo ""
 }
 
-function venv {
+function _venv {
     if [[ -z "${VIRTUAL_ENV}" ]]; then
         echo ""
     else
@@ -22,9 +22,9 @@ function exitstatus {
 
     if [ "$EXITSTATUS" -eq "0" ]
     then
-        PS1="${BOLD}[\D{%T}] [\h] [\w] ${GREEN}$(gitbranch)${OFF} $(venv)\n${BLUE}\$${OFF} "
+        PS1="${BOLD}[\D{%T}] [\h] [\w] ${GREEN}$(gitbranch)${OFF} $(_venv)\n${BLUE}\$${OFF} "
     else
-        PS1="${BOLD}[\D{%T}] [\h] [\w] ${GREEN}$(gitbranch)${OFF} $(venv)\n${RED}\$${OFF} "
+        PS1="${BOLD}[\D{%T}] [\h] [\w] ${GREEN}$(gitbranch)${OFF} $(_venv)\n${RED}\$${OFF} "
     fi
 
     PS2="${BOLD}>${OFF} "
