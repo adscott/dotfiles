@@ -16,5 +16,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'junegunn/goyo.vim'
 Plug 'davidhalter/jedi-vim'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 
 call plug#end()
