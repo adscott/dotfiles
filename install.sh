@@ -3,6 +3,10 @@
 set -e
 set -x
 
+if test -d "/opt/rh/devtoolset-8"; then
+    source /opt/rh/devtoolset-8/enable
+fi
+
 ln -sf `pwd`/files/tmux.conf ~/.tmux.conf
 ln -sf `pwd`/files/bash_profile ~/.bash_profile
 ln -sf `pwd`/files/vimrc ~/.vimrc
