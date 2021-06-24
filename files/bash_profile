@@ -40,6 +40,7 @@ export EDITOR="vim"
 
 alias please='sudo $(history -p !!)'
 alias unset_proxy='unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy'
+alias today='date +"%Y%m%d"'
 
 function p() {
     homedir=~
