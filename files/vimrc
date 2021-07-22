@@ -25,7 +25,7 @@ set splitbelow
 set splitright
 
 "fzf
-command! ProjectFiles execute 'GFiles --cached --others'
+command! ProjectFiles execute 'GFiles --cached --others --exclude-standard'
 nnoremap <silent> <C-p> :ProjectFiles<CR>
 
 "NERDTree
