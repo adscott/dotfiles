@@ -20,5 +20,6 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'junegunn/goyo.vim'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'godlygeek/tabular'
 
 call plug#end()
