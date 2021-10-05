@@ -21,5 +21,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'godlygeek/tabular'
+Plug 'dhruvasagar/vim-open-url'
 
 call plug#end()
